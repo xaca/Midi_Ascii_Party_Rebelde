@@ -1,13 +1,14 @@
-# Letreros ASCII
+# Proyecto final
 
 ## Descripción
 
+Este es el proyecto final, ejemplo de modificación del archivo readme.
 
 ### Integrantes
 
 - Andres Bedoya Tobon
 - Persona Numero 2
 
-## Recursos
+## Referentes
 
 - [Guia de markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
