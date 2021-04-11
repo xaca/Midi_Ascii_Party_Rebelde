@@ -1,27 +1,14 @@
-## 6 de abril - Seguimiento
+## 11 de abril - Seguimiento
 
 - ¿Qué hemos hecho?
 
-  Respuesta
+  Se define el enunciado del proyecto final y se crea el codigo base
 
 - ¿Qué voy a hacer?
 
-	Respuesta
+  Pendiente hacer refactoring de los paquetes de los helpers
+  Definir el archivo de letra por canción
 
 - ¿Qué dificultades tengo?
 
-	Respuesta
-
-## 8 de abril - Seguimiento
-
-- ¿Qué hemos hecho?
-
-  Respuesta
-
-- ¿Qué voy a hacer?
-
-	Respuesta
-
-- ¿Qué dificultades tengo?
-
-	Respuesta
+  Control de actualización de la consola sin saltar de linea
