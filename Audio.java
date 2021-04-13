@@ -9,7 +9,7 @@ import javax.sound.midi.Sequencer;
 public class Audio extends Thread{
 	
 	//https://docs.oracle.com/javase/7/docs/api/javax/sound/midi/Sequencer.html
-	private String sonido = "canciones/Me_gustas_tu.mid";//"Video_Game_Themes_-_Mario_Party.mid";	
+	private String sonido = "canciones/A_Dios_le_pido.mid";//"Video_Game_Themes_-_Mario_Party.mid";	
 	private Sequencer sequencer;
 	private boolean esta_reproduciendose;
 	
