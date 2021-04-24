@@ -63,7 +63,7 @@ public class ConsoleFile{
 		return arrayListToStrings(tokens);
 	}
 
-		//crea el archivo en disco, retorna la lista de estudiantes
+	//crea el archivo en disco, retorna la lista de estudiantes
 	public static String[] read(String file_name) {
 		// crea el flujo para leer desde el archivo
 		File file = new File(file_name);
