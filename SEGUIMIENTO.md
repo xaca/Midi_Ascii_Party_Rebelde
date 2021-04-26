@@ -46,7 +46,8 @@
 
 - ¿Qué hemos hecho?
 
-  Revisión del archivo de letras de canciones y ajustes generales, programación de la lectura del archivo y división de la información en una matriz, compuesta por n filas y 5 columnas, las cuales son: Nombre canción, autor,album,año,enlace youtube. Se dejan dos TODOs, para orientar a los estudiantes sobre que pueden ir avanzando.
+  - Revisión del archivo de letras de canciones y ajustes generales, programación de la lectura del archivo y división de la información en una matriz, compuesta por n filas y 5 columnas, las cuales son: Nombre canción, autor,album,año,enlace youtube. Se dejan dos TODOs, para orientar a los estudiantes sobre que pueden ir avanzando.
+  - Dejar de tarea, actualizar usando un pullrequest la canción de cada estudiante, con el nombre y la ubicación del archivo midi.
 
 - ¿Qué voy a hacer?
 
