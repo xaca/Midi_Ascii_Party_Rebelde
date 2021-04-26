@@ -96,7 +96,10 @@ public class Programa{
 
 				if(centinela == 2)
 				{
-					//TODO:Seleccionar el archivo que se va a imprimirs
+					//TODO:Seleccionar el archivo que se va a reproducir
+					//TODO:Crear funcion, para cambiar de cancion, pasando el titulo de la canción
+					//6 posiblemente es la columna de la ruta de la cancion
+					//audio.seleccionarCancion(info_canciones[0][6]);
 					audio.reproducir();
 				}
 
