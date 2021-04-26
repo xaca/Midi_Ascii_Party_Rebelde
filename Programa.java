@@ -110,8 +110,8 @@ public class Programa{
 					en la matriz info_canciones, acá un ejemplo de como imprimir
 					el nombre de la primer canción y su autor */
 
-					imprimir("Nombre "+info_canciones[0][1]);
-					imprimir("Autor "+info_canciones[0][2]);
+					imprimir("Nombre "+info_canciones[1][1]);
+					imprimir("Autor "+info_canciones[1][2]);
 
 					//TODO:Imprimir la lista completa
 				}
