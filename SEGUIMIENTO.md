@@ -6,8 +6,8 @@
 
 - ¿Qué voy a hacer?
 
-  Pendiente hacer refactoring de los paquetes de los helpers
-  Definir el archivo de letra por canción
+  - Pendiente hacer refactoring de los paquetes de los helpers
+  - Definir el archivo de letra por canción
 
 - ¿Qué dificultades tengo?
 
@@ -21,8 +21,8 @@
 
 - ¿Qué voy a hacer?
 
-  Pendiente hacer refactoring de los paquetes de los helpers
-  Definir el archivo de letra por canción
+  - Pendiente hacer refactoring de los paquetes de los helpers
+  - Definir el archivo de letra por canción
 
 - ¿Qué dificultades tengo?
 
@@ -50,9 +50,9 @@
 
 - ¿Qué voy a hacer?
 
-  Pendiente hacer refactoring de los paquetes de los helpers
-  Selección de la canción a reproducir
-  Agregar posicion donde inicia la canción
+  - Pendiente hacer refactoring de los paquetes de los helpers
+  - Selección de la canción a reproducir
+  - Agregar posicion donde inicia la canción
 
 - ¿Qué dificultades tengo?
 
