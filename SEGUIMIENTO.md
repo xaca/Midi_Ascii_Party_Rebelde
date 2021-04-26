@@ -42,7 +42,7 @@
 
   Control de actualización de la consola sin saltar de línea
 
-## 15 de abril - Seguimiento
+## 24 de abril - Seguimiento
 
 - ¿Qué hemos hecho?
 
@@ -52,6 +52,7 @@
 
   Pendiente hacer refactoring de los paquetes de los helpers
   Selección de la canción a reproducir
+  Agregar posicion donde inicia la canción
 
 - ¿Qué dificultades tengo?
 
