@@ -11,7 +11,7 @@
 
 ## Criterios de evaluación:
 
-- (10%) Trabajo en el repositorio, mínimo 15 commits por cada estudiantes para terminar el proyecto
+- (10%) Trabajo en el repositorio, mínimo 15 commits* por cada estudiantes para terminar el proyecto
 - (10%) Diseño en java de una animación con las letras de una canción
 - (10%) Subir el diseño de la letra correspondiente en este repositorio como pull request
 - (10%) Configuración y programación menú
@@ -19,6 +19,8 @@
 - (20%) Exposición entrega final ejercicio (Diapositivas y presentación)
 - (5%) Buenas prácticas en el código
 - (10%) Aplicación del concepto de funciones en el proyecto
+
+:new: * No son validos los commits de seguimiento
 
 ## Instrucciones de cada canción
 
@@ -46,7 +48,7 @@ Son programas de java, con funciones listas, que el estudiante podrá usar como 
 - ConsoleColors: Contiene la información de los colores
 - ConsoleFile: Realiza operaciones con archivos
 - ConsoleInput: Permite leer datos que el usuario ingrese
-- :new: ConsoleData: Nueva clase, que procesa un conjunto de datos
+- :new: ConsoleData: Procesa un conjunto de datos
 
 ## Referentes
 
