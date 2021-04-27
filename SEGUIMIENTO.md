@@ -58,3 +58,21 @@
 - ¿Qué dificultades tengo?
 
   Control de actualización de la consola sin saltar de línea
+
+
+  ## 27 de abril - Seguimiento
+
+- ¿Qué hemos hecho?
+
+  - Actualizacion de la información matriz de canciones
+  - Dejar de tarea, actualizar usando un pull request la canción de cada estudiante, con el nombre y la ubicación del archivo midi.
+  - Agregar posicion donde inicia la canción
+
+- ¿Qué voy a hacer?
+
+  - Pendiente hacer refactoring de los paquetes de los helpers
+  - Selección de la canción a reproducir
+
+- ¿Qué dificultades tengo?
+
+  Control de actualización de la consola sin saltar de línea
