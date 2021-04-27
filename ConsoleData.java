@@ -34,7 +34,7 @@ public class ConsoleData{
 			if(isTitle(data[i]))
 			{
 				//System.out.println(data[i]);
-				out.add(data[i]);
+				out.add(i+";"+data[i]);
 			}
 		}
 		return ConsoleFile.arrayListToMatrix(out);

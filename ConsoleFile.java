@@ -53,7 +53,7 @@ public class ConsoleFile{
 
 	public static String[][] arrayListToMatrix(ArrayList<String> al)
 	{
-		String [][]out = new String[al.size()][5];
+		String [][]out = new String[al.size()][7];
 		StringTokenizer line;
 		int filas = 0,columnas = 0;
 
