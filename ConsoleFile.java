@@ -51,6 +51,26 @@ public class ConsoleFile{
 		return out;
 	}
 
+	public static String[][] arrayListToMatrix(ArrayList<String> al)
+	{
+		String [][]out = new String[al.size()][7];
+		StringTokenizer line;
+		int filas = 0,columnas = 0;
+
+		for (String token : al) {
+			line = new StringTokenizer(token,";");
+			columnas = 0;
+			while (line.hasMoreTokens())
+			{
+				out[filas][columnas] = line.nextToken();
+				columnas++;
+			} 
+			filas++;
+			//System.out.print(token);
+		}//System.out.println(); 
+		return out;
+	}
+
 	public static String[] processLine(String line)
 	{
 		ArrayList<String> tokens = new ArrayList<String>();
@@ -63,7 +83,7 @@ public class ConsoleFile{
 		return arrayListToStrings(tokens);
 	}
 
-		//crea el archivo en disco, retorna la lista de estudiantes
+	//crea el archivo en disco, retorna la lista de estudiantes
 	public static String[] read(String file_name) {
 		// crea el flujo para leer desde el archivo
 		File file = new File(file_name);
@@ -77,7 +97,7 @@ public class ConsoleFile{
 				// el objeto scanner lee linea a linea desde el archivo
 				out.add(scanner.nextLine());				
 			}
-			//se cierra el ojeto scanner
+			//se cierra el objeto scanner
 			scanner.close();
 		} catch (FileNotFoundException e) {
 			//e.printStackTrace();

@@ -58,10 +58,19 @@ public class Programa{
 		}*/
 	}
 
+	public static void imprimir(String cadena)
+	{
+		System.out.println(cadena);
+	}
+
 	public static void main(String[] args) {
 		AnsiConsole.systemInstall();
 		Audio audio = new Audio();
 		int centinela = 0;	
+
+		String [] canciones = ConsoleFile.read("recursos/letras.csv");
+		String [][] info_canciones = ConsoleData.dataList(canciones);
+		//imprimir(""+canciones[0]);
 
 		try{
 			//Consolas con vt100 http://braun-home.net/michael/info/misc/VT100_commands.htm
@@ -70,10 +79,10 @@ public class Programa{
 			//System.out.println( ansi().fg(RED).a("Hello").newline().fg(GREEN).a(" World").reset() );
 			//System.out.println("\007");
 			
-			imprimirDisplay(4,16);
+			/*imprimirDisplay(4,16);
 			Thread.sleep(1000);
 			borrarDisplay(4);
-			imprimirDisplay(4,16);
+			imprimirDisplay(4,16);*/
 
 
 			do{
@@ -82,10 +91,15 @@ public class Programa{
 				System.out.println("2. Reproducir canci\u00F3n");
 				System.out.println("3. Activar Letra");
 				System.out.println("4. Detener Canci\u00F3n");
-				System.out.println("5. Salir");
+				System.out.println("5. Imprimir lista de Canciones");
+				System.out.println("6. Salir");
 
 				if(centinela == 2)
 				{
+					//TODO:Seleccionar el archivo que se va a reproducir
+					//TODO:Crear funcion, para cambiar de cancion, pasando el titulo de la canción
+					//6 posiblemente es la columna de la ruta de la cancion
+					//audio.seleccionarCancion(info_canciones[0][6]);
 					audio.reproducir();
 				}
 
@@ -93,9 +107,22 @@ public class Programa{
 				{
 					audio.detener();
 				}
+				if(centinela==5)
+				{
+					/* La informacion de las canciones esta
+					en la matriz info_canciones, acá un ejemplo de como imprimir
+					el nombre de la primer canción y su autor */
+
+					imprimir("Numero linea "+info_canciones[1][0]);
+					imprimir("Nombre "+info_canciones[1][1]);
+					imprimir("Autor "+info_canciones[1][2]);
+					imprimir("Archivo "+info_canciones[1][6]);
+
+					//TODO:Imprimir la lista completa
+				}
 
 				centinela = ConsoleInput.getInt();
-			}while(centinela!=5);
+			}while(centinela!=6);
 		}
 		catch(Exception e)
 		{
