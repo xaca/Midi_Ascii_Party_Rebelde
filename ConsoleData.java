@@ -35,6 +35,7 @@ public class ConsoleData{
 	}
 
 	public static String[][] dataList(String []data){
+		
 		ArrayList<String> out = new ArrayList<String>(); 
 		int inicio_letra = -1, fin_letra = -1, actual_cancion = -1;
 		boolean bandera = true;
@@ -48,7 +49,7 @@ public class ConsoleData{
 
 				if(fin_letra>0)
 				{
-					System.out.println(inicio_letra+" "+fin_letra);
+					// System.out.println(inicio_letra+" "+fin_letra);
 					out.add(inicio_letra+";"+fin_letra+";"+info_actual);
 				}
 
@@ -59,7 +60,7 @@ public class ConsoleData{
 
 		}
 
-		fin_letra = data.length-1;
+		fin_letra = data.length-2;
 		out.add(inicio_letra+";"+fin_letra+";"+info_actual);
 
 		return ConsoleFile.arrayListToMatrix(out);

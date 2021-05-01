@@ -84,7 +84,9 @@
   - Seleccionar el archivo que se va a reproducir  
   - Creación de la función, para cambiar de cancion, pasando el titulo de la canción 
   - Creación de la función para imprimir caracteres especiales, queda pendiente terminarla, esto es tarea de los estudiantes 
-  
+  - Tuve problemas leyendo el archivo, tenia un limite de 800 lineas
+  - Se corrige la lectura del archivo usando un Stream
+
 - ¿Qué voy a hacer?
 
   - Pendiente hacer refactoring de los paquetes de los helpers
@@ -93,5 +95,4 @@
 
 - ¿Qué dificultades tengo?
 
-  Control de actualización de la consola sin saltar de línea
-
+  - Control de actualización de la consola sin saltar de línea

@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.*;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+
 public class ConsoleFile{
 	
 	/*public static String[] read(String filename){
@@ -83,12 +87,12 @@ public class ConsoleFile{
 		return arrayListToStrings(tokens);
 	}
 
+	//Este metodo solo lee hasta 806 linea, revisar por que
 	public static String[] read(String file_name) {
 		// crea el flujo para leer desde el archivo
 		File file = new File(file_name);
 		ArrayList<String> out = new ArrayList<String>(); 
 		Scanner scanner;
-
 		try {
 			//se pasa el flujo al objeto scanner
 			scanner = new Scanner(file);
@@ -103,6 +107,28 @@ public class ConsoleFile{
 			System.out.println("Error no se encuentra el archivo "+file_name);
 		}
 		return arrayListToStrings(out);
+	}
+
+	//Este metodo funciona en java 8
+	public static String[] readBigFile(String file_name){
+		
+		ArrayList<String> out = new ArrayList<String>(); 
+		Stream<String> stream;
+        //read file into stream, try-with-resources
+        try{
+
+        	stream = Files.lines(Paths.get(file_name));
+            //stream.forEach(System.out::println);
+			stream.forEach(linea->{
+			 out.add(linea);
+			});
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+		return arrayListToStrings(out);
+
 	}
 
 	public static String[] stringToArray(String str){

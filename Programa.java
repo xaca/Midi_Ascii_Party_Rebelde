@@ -108,9 +108,8 @@ public class Programa{
 		int indice_cancion = 0;
 		int inicio_letra = 0, fin_letra = 0;
 
-		String [] canciones = ConsoleFile.read("recursos/letras.csv");
+		String [] canciones = ConsoleFile.readBigFile("recursos/letras.csv");
 		String [][] info_canciones = ConsoleData.dataList(canciones);
-		imprimir(""+canciones.length);
 
 		try{
 			//Consolas con vt100 http://braun-home.net/michael/info/misc/VT100_commands.htm
