@@ -58,19 +58,59 @@ public class Programa{
 		}*/
 	}
 
+	public static String convertirUnicode(String letra,String cadena){
+		
+		StringBuilder str = new StringBuilder(cadena);
+		int indice = -1;
+		char caracter = 0;
+		indice = str.lastIndexOf(letra);
+		
+		if(indice>=0 )
+		{
+			switch(letra){
+				case "á": caracter = '\u00E1';
+					      break;
+				case "é": caracter = '\u00E9';
+					      break;
+				case "í": caracter = '\u00ED';
+					      break;
+		        case "ó": caracter = '\u00F3';
+					      break;
+			    case "ú": caracter = '\u00FA';
+					      break;
+				case "ñ": caracter = '\u00F1';
+					      break;
+			}
+			// System.out.println("\\u" + Integer.toHexString('÷' | 0x10000).substring(1));
+			str.replace(indice,indice+2,""+caracter);
+		}
+
+		return str.toString();
+	}
+
 	public static void imprimir(String cadena)
 	{
-		System.out.println(cadena);
+		String str; 
+		str = convertirUnicode("á",cadena);
+		str = convertirUnicode("é",str);
+		str = convertirUnicode("í",str);
+		str = convertirUnicode("ó",str);
+		str = convertirUnicode("ú",str);
+		str = convertirUnicode("ñ",str);
+
+		System.out.println(str);
 	}
 
 	public static void main(String[] args) {
 		AnsiConsole.systemInstall();
 		Audio audio = new Audio();
 		int centinela = 0;	
+		int indice_cancion = 0;
+		int inicio_letra = 0, fin_letra = 0;
 
 		String [] canciones = ConsoleFile.read("recursos/letras.csv");
 		String [][] info_canciones = ConsoleData.dataList(canciones);
-		//imprimir(""+canciones[0]);
+		imprimir(""+canciones.length);
 
 		try{
 			//Consolas con vt100 http://braun-home.net/michael/info/misc/VT100_commands.htm
@@ -86,17 +126,20 @@ public class Programa{
 
 
 			do{
-				System.out.println("Ingrese una opcion asi:");
-				System.out.println("1. Buscar canci\u00F3n");
-				System.out.println("2. Reproducir canci\u00F3n");
-				System.out.println("3. Activar Letra");
-				System.out.println("4. Detener Canci\u00F3n");
-				System.out.println("5. Imprimir lista de Canciones");
-				System.out.println("6. Salir");
+				System.out.println();
+				imprimir("Ingrese una opción así:");
+				imprimir("1. Buscar canción");
+				imprimir("2. Reproducir canción");
+				imprimir("3. Activar Letra");
+				imprimir("4. Detener Canción");
+				imprimir("5. Imprimir lista de Canciones");
+				imprimir("6. Salir");
+				//TODO: Ojo falta validar la entrada de datos
+				centinela = ConsoleInput.getInt();
 
 				if(centinela == 2)
 				{
-					audio.seleccionarCancion(info_canciones[0][6]);
+					audio.seleccionarCancion(info_canciones[1][ConsoleData.RUTA_CANCION]);
 					audio.reproducir();
 				}
 
@@ -104,21 +147,35 @@ public class Programa{
 				{
 					audio.detener();
 				}
+
 				if(centinela==5)
 				{
 					/* La informacion de las canciones esta
 					en la matriz info_canciones, acá un ejemplo de como imprimir
 					el nombre de la primer canción y su autor */
+					
+					//TODO: Ojo, falta validar el valor ingresado
+					imprimir("Ingrese indice");
+					indice_cancion = ConsoleInput.getInt();
 
-					imprimir("Numero linea "+info_canciones[1][0]);
-					imprimir("Nombre "+info_canciones[1][1]);
-					imprimir("Autor "+info_canciones[1][2]);
-					imprimir("Archivo "+info_canciones[1][6]);
+					inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+					fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
 
+					System.out.println();
+					imprimir("Inicio letra "+inicio_letra);
+					imprimir("Fin letra "+fin_letra);
+					imprimir("Nombre "+info_canciones[indice_cancion][ConsoleData.NOMBRE_CANCION]);
+					imprimir("Autor "+info_canciones[indice_cancion][ConsoleData.AUTOR_CANCION]);
+					imprimir("Archivo "+info_canciones[indice_cancion][ConsoleData.RUTA_CANCION]);
+
+					imprimir("Primera estrofa: "+canciones[inicio_letra]);
+					imprimir("Última estrofa: "+canciones[fin_letra]);
+					
+					//TODO:Convertir a unicode mayúsculas y caracteres especiales
+					//TODO:Explicar como funciona el archivo y como se analiza cada línea
 					//TODO:Imprimir la lista completa
 				}
 
-				centinela = ConsoleInput.getInt();
 			}while(centinela!=6);
 		}
 		catch(Exception e)

@@ -82,7 +82,8 @@
 - ¿Qué hemos hecho?
 
   - Seleccionar el archivo que se va a reproducir  
-  - Crear funcion, para cambiar de cancion, pasando el titulo de la canción  
+  - Creación de la función, para cambiar de cancion, pasando el titulo de la canción 
+  - Creación de la función para imprimir caracteres especiales, queda pendiente terminarla, esto es tarea de los estudiantes 
   
 - ¿Qué voy a hacer?
 

@@ -60,6 +60,9 @@ Son programas de java, con funciones listas, que el estudiante podrá usar como 
 - [Video game music archive](http://www.vgmusic.com/)
 - [Me gustas tu - Manu Chao](https://genius.com/Manu-chao-me-gustas-tu-lyrics)
 - [Ejemplo datos en matriz](https://onlinegdb.com/r14vUiWvu)
+- [StringBuilder](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html#replace(int,%20int,%20java.lang.String))
+- [Tabla de caracteres Unicode](https://unicode-table.com/es/)
+- [Tabla de caracteres latinos](https://ingmmurillo.blogspot.com/2012/05/tabla-de-caracteres-latinos-en-unicode.html)
 
 ## Inspiración
 

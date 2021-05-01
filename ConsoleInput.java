@@ -4,14 +4,30 @@ public class ConsoleInput{
 
 	public static Scanner sc = new Scanner(System.in);
 
+	public static boolean isNumeric(String str){
+        return str != null && str.matches("[0-9.]+");
+    }
+
+	public static int stringToInt(String numero){
+		/*try{
+            //Integer number = Integer.valueOf(str);
+            int number = Integer.parseInt(str);
+            System.out.println(number); 
+        }
+        catch (NumberFormatException ex){
+            ex.printStackTrace();
+        }*/
+        return Integer.parseInt(numero);
+	}
+
 	public static int getInt()
 	{
 		int temp = 0;
 
 		try{
 			// Initialize the Scanner object to use the standard input
-        	temp = sc.nextInt();
-                sc.nextLine();
+			temp = sc.nextInt();
+			sc.nextLine();
 	        // Close the Scanner
 		}catch(Exception e)
 		{
@@ -29,8 +45,8 @@ public class ConsoleInput{
 
 		try{
 			// Initialize the Scanner object to use the standard input
-	        temp = sc.nextFloat();
-                sc.nextLine();
+			temp = sc.nextFloat();
+			sc.nextLine();
         }catch(Exception e)
 		{
 			refreshScanner();

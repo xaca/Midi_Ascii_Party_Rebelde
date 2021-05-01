@@ -53,7 +53,7 @@ public class ConsoleFile{
 
 	public static String[][] arrayListToMatrix(ArrayList<String> al)
 	{
-		String [][]out = new String[al.size()][7];
+		String [][]out = new String[al.size()][ConsoleData.SET_LENGTH];
 		StringTokenizer line;
 		int filas = 0,columnas = 0;
 
@@ -83,7 +83,6 @@ public class ConsoleFile{
 		return arrayListToStrings(tokens);
 	}
 
-	//crea el archivo en disco, retorna la lista de estudiantes
 	public static String[] read(String file_name) {
 		// crea el flujo para leer desde el archivo
 		File file = new File(file_name);

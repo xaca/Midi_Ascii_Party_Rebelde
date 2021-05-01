@@ -36,7 +36,9 @@ public class Audio extends Thread{
 	            esta_reproduciendose = true;
 
 	        } catch (MidiUnavailableException | InvalidMidiDataException | IOException ex) {
-	            ex.printStackTrace();
+	            //ex.printStackTrace();
+	            System.out.println("Error al reproducir el archivo, revise la ruta y vuelva a intentarlo.");
+	            esta_reproduciendose = true;
 	        }
 		}
 		else{
