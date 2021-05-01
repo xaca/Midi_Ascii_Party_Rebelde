@@ -60,7 +60,7 @@
   Control de actualización de la consola sin saltar de línea
 
 
-  ## 27 de abril - Seguimiento
+## 27 de abril - Seguimiento
 
 - ¿Qué hemos hecho?
 
@@ -76,3 +76,21 @@
 - ¿Qué dificultades tengo?
 
   Control de actualización de la consola sin saltar de línea
+
+## 1 de mayo - Seguimiento
+
+- ¿Qué hemos hecho?
+
+  - Seleccionar el archivo que se va a reproducir  
+  - Crear funcion, para cambiar de cancion, pasando el titulo de la canción  
+  
+- ¿Qué voy a hacer?
+
+  - Pendiente hacer refactoring de los paquetes de los helpers
+  - Seleccionar letra de cancion para empezar a animar la letra
+  - Explicar la personalizacion de la interfaz con ASCII art
+
+- ¿Qué dificultades tengo?
+
+  Control de actualización de la consola sin saltar de línea
+
