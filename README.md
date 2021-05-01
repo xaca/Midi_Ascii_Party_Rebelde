@@ -63,6 +63,10 @@ Son programas de java, con funciones listas, que el estudiante podrá usar como 
 - [StringBuilder](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html#replace(int,%20int,%20java.lang.String))
 - [Tabla de caracteres Unicode](https://unicode-table.com/es/)
 - [Tabla de caracteres latinos](https://ingmmurillo.blogspot.com/2012/05/tabla-de-caracteres-latinos-en-unicode.html)
+- [Lectura de archivos grandes usando Stream](https://mkyong.com/java8/java-8-stream-read-a-file-line-by-line/)
+- [Interfaz Stream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
+- [Ejemplos Stream](https://stackabuse.com/guide-to-java-streams-foreach-with-examples/)
+
 
 ## Inspiración
 
