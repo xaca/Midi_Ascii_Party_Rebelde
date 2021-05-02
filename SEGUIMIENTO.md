@@ -96,3 +96,19 @@
 - ¿Qué dificultades tengo?
 
   - Control de actualización de la consola sin saltar de línea
+
+## 2 de mayo - Seguimiento
+
+- ¿Qué hemos hecho?
+
+  - Seleccionar letra de canción para empezar a animar la letra
+  - Impresion de la letra de la canción seleccionada
+
+- ¿Qué voy a hacer?
+
+  - Pendiente hacer refactoring de los paquetes de los helpers
+  - Explicar la personalizacion de la interfaz con ASCII art
+
+- ¿Qué dificultades tengo?
+
+  - Control de actualización de la consola sin saltar de línea

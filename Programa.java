@@ -101,15 +101,31 @@ public class Programa{
 		System.out.println(str);
 	}
 
+	public static StringBuilder obtenerLetraCancion(int inicio,int fin, String[]data)
+	{
+		StringBuilder str = new StringBuilder();
+
+		for(int i = inicio; i<=fin; i++)
+		{
+			str.append(data[i]+"\n");
+		}
+
+		return str;
+	}
+
 	public static void main(String[] args) {
 		AnsiConsole.systemInstall();
+		
 		Audio audio = new Audio();
 		int centinela = 0;	
 		int indice_cancion = 0;
 		int inicio_letra = 0, fin_letra = 0;
+		String [] canciones;
+		String [][] info_canciones;
+		StringBuilder letra_cancion;
 
-		String [] canciones = ConsoleFile.readBigFile("recursos/letras.csv");
-		String [][] info_canciones = ConsoleData.dataList(canciones);
+		canciones = ConsoleFile.readBigFile("recursos/letras.csv");
+		info_canciones = ConsoleData.dataList(canciones);
 
 		try{
 			//Consolas con vt100 http://braun-home.net/michael/info/misc/VT100_commands.htm
@@ -129,7 +145,7 @@ public class Programa{
 				imprimir("Ingrese una opción así:");
 				imprimir("1. Buscar canción");
 				imprimir("2. Reproducir canción");
-				imprimir("3. Activar Letra");
+				imprimir("3. Mostrar Letra");
 				imprimir("4. Detener Canción");
 				imprimir("5. Imprimir lista de Canciones");
 				imprimir("6. Salir");
@@ -140,6 +156,21 @@ public class Programa{
 				{
 					audio.seleccionarCancion(info_canciones[1][ConsoleData.RUTA_CANCION]);
 					audio.reproducir();
+				}
+
+				if(centinela == 3)
+				{
+					//TODO: Ojo, falta validar el valor ingresado
+					//TODO: Falta darle formato amigable de lectura al usuario 
+					imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+					indice_cancion = ConsoleInput.getInt();
+
+					inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+					fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+					
+					letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+					imprimir(letra_cancion.toString());
 				}
 
 				if(centinela == 4)
@@ -154,7 +185,7 @@ public class Programa{
 					el nombre de la primer canción y su autor */
 					
 					//TODO: Ojo, falta validar el valor ingresado
-					imprimir("Ingrese indice");
+					imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
 					indice_cancion = ConsoleInput.getInt();
 
 					inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
