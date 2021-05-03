@@ -142,6 +142,7 @@ public class Programa{
 
 			do{
 				System.out.println();
+				//TODO: Terminar la funcion para que imprima todos los caracteres especiales que use el programa
 				imprimir("Ingrese una opción así:");
 				imprimir("1. Buscar canción");
 				imprimir("2. Reproducir canción");
