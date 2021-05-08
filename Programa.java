@@ -14,6 +14,8 @@ public class Programa{
 		if(indice>=0 )
 		{
 			switch(letra){
+				case "Á": caracter = '\u00C1';
+						  break;
 				case "á": caracter = '\u00E1';
 					      break;
 				case "é": caracter = '\u00E9';
@@ -28,7 +30,7 @@ public class Programa{
 					      break;
 			}
 			// System.out.println("\\u" + Integer.toHexString('÷' | 0x10000).substring(1));
-			str.replace(indice,indice+2,""+caracter);
+			str.replace(indice,indice+1,""+caracter);
 		}
 
 		return str.toString();
@@ -37,7 +39,8 @@ public class Programa{
 	public static void imprimir(String cadena)
 	{
 		String str; 
-		str = convertirUnicode("á",cadena);
+		str = convertirUnicode("Á",cadena);
+		str = convertirUnicode("á",str);
 		str = convertirUnicode("é",str);
 		str = convertirUnicode("í",str);
 		str = convertirUnicode("ó",str);
