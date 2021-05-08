@@ -12,7 +12,7 @@
 ## Criterios de evaluación:
 
 - (10%) Trabajo en el repositorio, mínimo 15 commits* por cada estudiantes para terminar el proyecto
-- (10%) Diseño en java de una animación con las letras de una canción
+- (10%) Realizar un video de la aplicación funcionando y publicar en youtube
 - (10%) Subir el diseño de la letra correspondiente en este repositorio como pull request
 - (10%) Configuración y programación menú
 - (25%) Programación de la aplicación y personalización de la interfaz gráfica
@@ -48,7 +48,10 @@ Son programas de java, con funciones listas, que el estudiante podrá usar como 
 - ConsoleColors: Contiene la información de los colores
 - ConsoleFile: Realiza operaciones con archivos
 - ConsoleInput: Permite leer datos que el usuario ingrese
-- :new: ConsoleData: Procesa un conjunto de datos
+- ConsoleData: Procesa un conjunto de datos
+- :new: ConsoleAnimator: Base para realizar animacion en consola, sin terminar
+- :new: RandomHelper: Calcula numeros aleatorios entre numeros enteres menor, mayor, incluyendo ambos valores.
+- :new: AsciiEjemplo: Ejemplo para imprimir menú personalizado
 
 ## Referentes
 
@@ -66,7 +69,7 @@ Son programas de java, con funciones listas, que el estudiante podrá usar como 
 - [Lectura de archivos grandes usando Stream](https://mkyong.com/java8/java-8-stream-read-a-file-line-by-line/)
 - [Interfaz Stream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
 - [Ejemplos Stream](https://stackabuse.com/guide-to-java-streams-foreach-with-examples/)
-
+- [Números aleatrios](https://memorynotfound.com/random-number-inclusive-exclusive-java/)
 
 ## Inspiración
 

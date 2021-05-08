@@ -112,3 +112,24 @@
 - ¿Qué dificultades tengo?
 
   - Control de actualización de la consola sin saltar de línea
+
+## 6, 7, 8 de mayo - Seguimiento
+
+- ¿Qué hemos hecho?
+
+  - Se ajusta el menu ascii inicial
+  - Se programan nuevos helpers, se deja la explicación en el readme
+  - Se actualiza el archivo de letras, con todos los archivos que hay disponibles hasta la fecha
+  - Se realizó asesoria de varios grupos
+
+- ¿Qué voy a hacer?
+
+  - Pendiente hacer refactoring de los paquetes de los helpers
+  - Reproducir un fragmento de audio aleatorio
+  - Detectar cuando termina una canción, para reproducir la siguiente.
+  - Proponer un sistema de eventos para el control de reproducción
+
+- ¿Qué dificultades tengo?
+
+  - Control de actualización de la consola sin saltar de línea
+  - Animación, demanda mucho tiempo de dediación y este no es un tema critico del proyecto.
