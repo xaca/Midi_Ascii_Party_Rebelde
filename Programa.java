@@ -93,9 +93,10 @@ public class Programa{
 				  imprimir("	|                    1. Buscar canción			 	   |");
 				  imprimir("	|                    2. Reproducir canción			   |");
 				  imprimir("	|                    3. Mostrar Letra				   |");
-				  imprimir("	|                    4. Detener Canción				   |");
-				  imprimir("	|                    5. Imprimir lista de Canciones		   |");
-				  imprimir("	|                    6. Salir					   |");
+				  imprimir("	|                    4. Fragmento canción        		   |");
+				  imprimir("	|                    5. Detener Canción				   |");
+				  imprimir("	|                    6. Imprimir lista de Canciones		   |");
+				  imprimir("	|                    7. Salir					   |");
 		System.out.println("	|__________________________________________________________________|");
 		System.out.print("	Spotify$ ");
 	}
@@ -154,9 +155,17 @@ public class Programa{
 				if(centinela == 4)
 				{
 					audio.detener();
+					indice_cancion = RandomHelper.random(0,info_canciones.length-1);
+					audio.seleccionarCancion(info_canciones[indice_cancion][ConsoleData.RUTA_CANCION]);
+					audio.fragmentoAleatorio();
 				}
 
-				if(centinela==5)
+				if(centinela == 5)
+				{
+					audio.detener();
+				}
+				
+				if(centinela==6)
 				{
 					/* La informacion de las canciones esta
 					en la matriz info_canciones, acá un ejemplo de como imprimir
@@ -184,7 +193,7 @@ public class Programa{
 					//TODO:Imprimir la lista completa
 				}
 
-			}while(centinela!=6);
+			}while(centinela!=7);
 		}
 		catch(Exception e)
 		{
