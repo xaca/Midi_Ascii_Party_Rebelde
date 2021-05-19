@@ -94,7 +94,7 @@ public class Programa{
 				  imprimir("	|                    2. Reproducir canción			   |");
 				  imprimir("	|                    3. Mostrar Letra				   |");
 				  imprimir("	|                    4. Detener Canción				   |");
-				  imprimir("	|                    5. Imprimir lista de Canciones		   |");
+				  imprimir("	|                    5. Imprimir info de canción		   |");
 				  imprimir("	|                    6. Salir					   |");
 		System.out.println("	|__________________________________________________________________|");
 		System.out.print("	Spotify$ ");
